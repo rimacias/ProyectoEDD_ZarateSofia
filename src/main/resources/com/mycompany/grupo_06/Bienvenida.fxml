@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="751.0" spacing="20.0" style="-fx-background-color: #fbf2ac;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.grupo_06.BienvenidaController">
+   <children>
+      <VBox alignment="CENTER" fillWidth="false" prefHeight="113.0" prefWidth="571.0">
+         <children>
+            <Label fx:id="lbBienvenida" alignment="CENTER" contentDisplay="CENTER" prefHeight="60.0" prefWidth="571.0" text="Label" />
+            <ImageView fx:id="imgv" fitHeight="65.0" fitWidth="95.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" fillWidth="false" prefHeight="42.0" prefWidth="722.0">
+         <children>
+            <Label prefHeight="28.0" prefWidth="258.0" text="Historial de Emojis:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <ScrollPane fx:id="panelHistorial" prefHeight="181.0" prefWidth="554.0" style="-fx-border-color: black;" />
+      <HBox alignment="CENTER" prefHeight="56.0" prefWidth="574.0" spacing="20.0">
+         <children>
+            <Button fx:id="btCargarEmoji" alignment="CENTER" mnemonicParsing="false" onAction="#cargarEmoji" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 708;" text="Cargar Emoji" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btCrearEmoji" alignment="CENTER" mnemonicParsing="false" onAction="#cambiarSecondaryController" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 708;" text="Crear nuevo emoji" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="btLimpiarHistorial" alignment="CENTER" mnemonicParsing="false" onAction="#limpiarHistorial" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 708;" text="Limpiar Historial" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="72.0" prefWidth="186.0">
+         <children>
+            <Button fx:id="btCargarEmoji1" alignment="CENTER" mnemonicParsing="false" onAction="#cerrarSesion" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 708;" text="Cerrar sesión" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</VBox>

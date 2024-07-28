@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="500.0" prefWidth="751.0" spacing="10.0" style="-fx-background-color: #fbf2ac;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.grupo_06.SecondaryController">
+   <children>
+      <VBox alignment="CENTER_RIGHT" fillWidth="false" prefHeight="22.0" prefWidth="746.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#volver" style="-fx-background-color: black; -fx-background-radius: 70;" text="Volver" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets right="5.0" top="5.0" />
+         </VBox.margin>
+      </VBox>
+      <HBox alignment="CENTER" fillHeight="false" prefHeight="231.0" prefWidth="751.0" spacing="20.0">
+         <children>
+            <StackPane fx:id="panelEmoji" accessibleRole="IMAGE_VIEW" cache="true" prefHeight="200.0" prefWidth="207.0" style="-fx-background-color: white; -fx-background-radius: 600;" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="117.0" spacing="10.0">
+               <children>
+                  <Button fx:id="RandomButton" mnemonicParsing="false" onAction="#emojiRandom" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: black; -fx-background-radius: 70;" text="Random" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#guardarEmoji" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: black; -fx-background-radius: 70;" text="Guardar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#agregarComponentes" prefHeight="36.0" prefWidth="100.0" style="-fx-background-color: black; -fx-background-radius: 70;" text="+Agregar" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" prefHeight="208.0" prefWidth="571.0" spacing="20.0">
+         <children>
+            <HBox fx:id="hBoxPartesCuerpo" alignment="CENTER" fillHeight="false" prefHeight="61.0" prefWidth="306.0" spacing="20.0">
+               <children>
+                  <Button fx:id="btCara" mnemonicParsing="false" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: black; -fx-background-radius: 70;" text="Cara" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btBoca" mnemonicParsing="false" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: black; -fx-background-radius: 70;" text="Boca" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btOjos" mnemonicParsing="false" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: black; -fx-background-radius: 70;" text="Ojos" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" fillHeight="false" prefHeight="101.0" prefWidth="440.0" spacing="10.0">
+               <children>
+                  <ImageView fx:id="imgvFizq" fitHeight="77.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" />
+                  <HBox fx:id="listado" prefHeight="63.0" prefWidth="200.0" spacing="20.0" />
+                  <ImageView fx:id="imgvFdere" fitHeight="77.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <HBox fx:id="hBoxBotones" alignment="CENTER" fillHeight="false" prefHeight="100.0" prefWidth="200.0" spacing="20.0" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</VBox>
